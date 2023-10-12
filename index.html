@@ -1,20 +1,65 @@
-<!DOCTYPE html> 
-<html lang=“es”> 
-  <head>
-    <meta charset=“utf-8”>
-    <meta name=“viewport” 
-      content=“width=device-width, initial-scale=1” id=“wixDesktopViewport”> 
-    <meta http-equiv=“X-UA-Compatible” content=“IE=edge”> 
-    <meta name=“generator” content=“Wix.com Website Builder”> 
-    <title>Virtual Tienda Medellín - Comprar</title>
-    <link rel=“icon” sizes=“192x192” href=“https://static.wixstatic.com/media/b360d1_ab11455fb6974e12b01039c5670c3b60%7Emv2.jpg/v1/fill/w_192,h_192,lg_1,usm_0.66_1.00_0.01/b360d1_ab11455fb6974e12b01039c5670c3b60%7Emv2.jpg” type=“image/jpeg”>
-    <link rel=“shortcut icon” href=“https://static.wixstatic.com/media/b360d1_ab11455fb6974e12b01039c5670c3b60%7Emv2.jpg/v1/fill/w_32,h_32,lg_1,usm_0.66_1.00_0.01/b360d1_ab11455fb6974e12b01039c5670c3b60%7Emv2.jpg” type=“image/jpeg”>
-    <link rel=“apple-touch-icon” href=“https://static.wixstatic.com/media/b360d1_ab11455fb6974e12b01039c5670c3b60%7Emv2.jpg/v1/fill/w_180,h_180,lg_1,usm_0.66_1.00_0.01/b360d1_ab11455fb6974e12b01039c5670c3b60%7Emv2.jpg” type=“image/jpeg”>
-    <!-- He eliminado la etiqueta de Safari Pinned Tab Icon porque no es necesaria para este sitio web --> <!-- He agregado la etiqueta de título para especificar el título de la página -->
-    <!-- He eliminado los scripts de polyfills porque no son necesarios para este sitio web -->
-    <!-- He eliminado los scripts de globals definitions porque no son necesarios para este sitio web -->
-    <!-- He eliminado el script de sendFedopsLoadStarted.inline porque no es necesario para este sitio web -->
-  </head> <body> <div id=“root”> <h1>Virtual Tienda Medellín</h1> <p>La  mejor tienda virtual de Medellín, donde puedes comprar productos de calidad a precios increíbles.</p> 
-    <a href=“/productos”>Ver productos</a>
-    <img src=“https://static.wixstatic.com/media/b360d1_bf9f6a8f5f9a4a8f8f6a9f6a8f5f9a4a8f6a9f6a8f5f9a4a8f6a9f6a8f5f9a4a8f6a9f6a8f5f9a4a8f6a9f6a8f5f9a4a8f6a9f6a8f5f9a4a8f6a9.jpg/v1/fill/w_500,h_500,al_c,q_80,b360d1_bf9f6a8f5f9a4a8f8f6a9.webp”
-      alt=“Tienda virtual” width=“500” height=“500”> </div> </body> </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarpiShop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">CarpiShop</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">CarpiShop</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                    </li>
+                    <li>
+                        <button id="abrigos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Abrigos</button>
+                    </li>
+                    <li>
+                        <button id="camisetas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Camisetas</button>
+                    </li>
+                    <li>
+                        <button id="pantalones" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Pantalones</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2022 Carpi Coder</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se va a rellenar con JS -->
+            </div>
+        </main>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
